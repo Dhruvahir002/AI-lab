@@ -1,0 +1,21 @@
+Copy paste in notepad and save as example.pl
+american(robert).
+enemy(a,america).
+hostile(X):-enemy(X,america).
+missile(t1).
+owns(a,t1).
+sells(robert,X,a):-missile(X),owns(a,X).
+criminal(X):-american(X),weapon(Y),sells(X,Y,Z),hostile(Z).
+weapon(X):-missile(X).
+
+
+Open prolog app 
+File-> consult -> open example.pl
+
+run 
+?- criminal(robert).
+
+
+
+
+

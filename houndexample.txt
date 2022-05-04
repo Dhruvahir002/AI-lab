@@ -1,0 +1,15 @@
+Save in notepad as hound.pl
+Copy & paste
+hound(marshall).
+hound(rubble).
+howls_at_night(X) :-
+    hound(X).
+Open prolog app 
+File-> consult -> open hound.pl
+
+run 
+?- howls_at_night(everest).
+
+
+?- howls_at_night(rubble).
+
